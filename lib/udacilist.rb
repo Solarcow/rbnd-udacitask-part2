@@ -25,8 +25,9 @@ class UdaciList
     end
   end
   def all
+    ascii = Artii::Base.new :font => 'big'
     puts "-" * @title.length
-    puts @title
+    puts ascii.asciify(@title)
     puts "-" * @title.length
     @items.each_with_index do |item, position|
       Formatador.display_line('[blue]' "#{position + 1}) #{item.details}")

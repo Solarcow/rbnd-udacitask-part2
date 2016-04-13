@@ -4,7 +4,7 @@
 I used Formatador as my gem of choice. I used it to change the text for the task list to blue.
 2. Describe the 2 features you added to the project.
   a) Feature 1... I added the ability to delete all items of a specific type for a list. This allows you to quickly clear off events or "to do" at a single time
-  b) Feature 2...
+  b) Feature 2... I added the artii gem to change the title to ascii art. This makes it so the list is seperated and easier to read.
 
 # REFLECTIONS
 # -------------------------------------------------------
@@ -13,6 +13,7 @@ The core project took me only 3-4 hours. I spent the most time on adding "Type" 
 2. What was the most rewarding challenge you conquered?
 Figuring out the if statements that I used for format_date. I was unsure on how I would approach the project and tried some guesses and then I had an "Ah ha!" moment and figured out how to do it.
 3. What two additional features did you build? Why?
-I added the ability to delete all items of a single type for a list to quickly clear off events or remove "to do" items.
+I added the ability to delete all items of a single type for a list to quickly clear off events or remove "to do" items.	
+I added the artii gem to change the title to ascii art. This makes it so the list is seperated and easier to read.
 4. Where do you still have room to grow?
 I feel that I still have room to grow with pulling information from arrays.
