@@ -1,6 +1,8 @@
 require 'bundler/setup'
 require 'chronic'
 require 'colorize'
+require 'formatador'
+require 'artii'
 # Find a third gem of your choice and add it to your project
 require 'date'
 require_relative "lib/listable"
@@ -45,4 +47,6 @@ new_list.all
 
 # DEMO FILTER BY ITEM TYPE
 # ------------------------
-# new_list.filter("event")
+new_list.filter("event")
+# new_list.delete_type("event") #new code
+# new_list.all #new code 
