@@ -6,12 +6,12 @@ class UdaciList
     @items = []
   end
   def add(type, description, options={})
-    type = type.downcase
-    if type == "todo"
+    @type = type.downcase
+    if @type == "todo"
       @items.push TodoItem.new(description, options)
-    elsif type == "event"
+    elsif @type == "event"
       @items.push EventItem.new(description, options)
-    elsif type == "link"
+    elsif @type == "link"
       @items.push LinkItem.new(description, options)
     else
       raise UdaciListErrors::InvalidItemType, "#{type} is not a valid item type"
@@ -31,5 +31,7 @@ class UdaciList
     @items.each_with_index do |item, position|
       puts "#{position + 1}) #{item.details}"
     end
+  end
+  def filter
   end
 end

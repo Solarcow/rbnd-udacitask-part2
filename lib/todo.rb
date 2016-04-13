@@ -7,12 +7,10 @@ class TodoItem
     @due = options[:due] ? Chronic.parse(options[:due]) : options[:due]
     @priority = options[:priority]
   end
-  def format_date
-    @due ? @due.strftime("%D") : "No due date"
-  end
+
   def details
-    format_description(@description) + "due: " +
-    format_date +
+    "Type: To Do".ljust(15) + format_description(@description) + "due: " +
+    format_date(due_date: @due) +
     format_priority(@priority)
   end
 end
